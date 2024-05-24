@@ -12,7 +12,7 @@ namespace EmployeeInterface
         string LastName { get; set; }
         string Department { get; set; }
         string JobTitle { get; set; }
-        string BasicSalary { get; set; }
+        double BasicSalary { get; set; }
 
 
         void computeSalary(int hoursWorked, double ratePerHour);

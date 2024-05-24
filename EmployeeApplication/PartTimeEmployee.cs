@@ -15,7 +15,7 @@ namespace EmployeeApplication
         private string job_title;
         private double basic_salary;
 
-        string FirstName
+        string IEmployee.FirstName
         {
             set
             {
@@ -27,7 +27,7 @@ namespace EmployeeApplication
             }
         }
 
-        string LastName
+        string IEmployee.LastName
         {
             set
             {
@@ -39,7 +39,7 @@ namespace EmployeeApplication
             }
         }
 
-        string Department
+        string IEmployee.Department
         {
             set
             {
@@ -51,7 +51,7 @@ namespace EmployeeApplication
             }
         }
 
-        string JobTitle
+        string IEmployee.JobTitle
         {
             set
             {
@@ -63,7 +63,7 @@ namespace EmployeeApplication
             }
         }
 
-        double BasicSalary
+        double IEmployee.BasicSalary
         {
             set
             {
@@ -75,18 +75,12 @@ namespace EmployeeApplication
             }
         }
 
-        string IEmployee.FirstName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        string IEmployee.LastName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        string IEmployee.Department { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        string IEmployee.JobTitle { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        string IEmployee.BasicSalary { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
         public PartTimeEmployee(string FName, string LName, string dept, string job)
         {
-            FirstName = FName;
-            LastName = LName;
-            Department = dept;
-            JobTitle = job;
+            first_name = FName;
+            last_name = LName;
+            department = dept;
+            job_title = job;
         }
 
         public void computeSalary(int hoursWorked, double ratePerHour)
