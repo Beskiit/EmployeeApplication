@@ -77,10 +77,10 @@ namespace EmployeeApplication
 
         public PartTimeEmployee(string FName, string LName, string dept, string job)
         {
-            first_name = FName;
-            last_name = LName;
-            department = dept;
-            job_title = job;
+            this.first_name = FName;
+            this.last_name = LName;
+            this.department = dept;
+            this.job_title = job;
         }
 
         public void computeSalary(int hoursWorked, double ratePerHour)
